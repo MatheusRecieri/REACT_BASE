@@ -1,5 +1,5 @@
-import React from 'react';
-import { Router, useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // import history from './services/history';
 import GlobalStyles from './styles/GlobalStyles';
@@ -8,14 +8,16 @@ import AppRoutes from './routes/routes';
 
 function App() {
   const navigate = useNavigate();
-  navigate('/');
+  useEffect(() => {
+    navigate('/');
+  }, [navigate]);
 
   return (
-    <Router>
+    <>
       <Header />
       <AppRoutes />
       <GlobalStyles />
-    </Router>
+    </>
   );
 }
 export default App;
