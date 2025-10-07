@@ -1,4 +1,22 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Navigate } from 'react-router-dom';
 
-export default function MyRoute({ component: Component, isClosed, ...rest }) {}
+export default function MyRoute({ component: Component, isClosed }) {
+  const isLoggedIn = true;
+
+  if (isClosed && !isLoggedIn) {
+    console.log('teste');
+
+    return <Navigate to="/login" replace />;
+  }
+
+  return <Component />;
+}
+
+MyRoute.defaultProps = { isClosed: false };
+
+MyRoute.propTypes = {
+  component: PropTypes.element.isRequired,
+  isClosed: PropTypes.bool,
+};

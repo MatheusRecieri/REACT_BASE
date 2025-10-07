@@ -2,6 +2,7 @@ import React from 'react';
 import { Title, Paragrafo } from './styled';
 import { Container } from '../../styles/GlobalStyles';
 
+//componente
 export default function Login() {
   return (
     <Container>
