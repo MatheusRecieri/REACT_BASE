@@ -1,4 +1,5 @@
 export const primaryColor = '#c3073f';
+export const primaryColor2 = '#800b2eff';
 export const primaryDarkColor = '#1a1a1d';
 
 export const successColor = '#1f97f6';

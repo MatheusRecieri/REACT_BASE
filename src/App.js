@@ -1,5 +1,6 @@
 // import React, { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 // import history from './services/history';
 import GlobalStyles from './styles/GlobalStyles';
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <AppRoutes />
       <GlobalStyles />
+      <ToastContainer autoClose={3000} className="toast-container" />
     </>
   );
 }

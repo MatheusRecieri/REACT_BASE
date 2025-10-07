@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Navigate } from 'react-router-dom';
 
 export default function MyRoute({ component: Component, isClosed }) {
-  const isLoggedIn = true;
+  const isLoggedIn = false;
 
   if (isClosed && !isLoggedIn) {
     console.log('teste');

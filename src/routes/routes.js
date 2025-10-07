@@ -11,7 +11,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/login" element={<MyRoute component={Login} isClosed />} />
+      <Route path="/login" element={<MyRoute component={Login} />} />
     </Routes>
   );
 }

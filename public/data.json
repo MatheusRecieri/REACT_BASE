@@ -1,0 +1,22 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Matheus Recieri",
+      "email": "matheus@example.com",
+      "cargo": "Desenvolvedor Full Stack"
+    },
+    {
+      "id": 2,
+      "nome": "Ana Souza",
+      "email": "ana@example.com",
+      "cargo": "Analista de Sistemas"
+    },
+    {
+      "id": 3,
+      "nome": "Carlos Lima",
+      "email": "carlos@example.com",
+      "cargo": "Engenheiro de Software"
+    }
+  ]
+}
